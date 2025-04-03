@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Untitled design.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+header {
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    padding: 60px 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+.btn {
+    display: inline-block;
+    background: #ddbb33;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-weight: bold;
+    color: white;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.features, .about {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    border-radius: 12px;
+    margin: 20px;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 15px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.feature:hover {
+    transform: scale(1.05);
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
